@@ -64,7 +64,7 @@ export default {
     return {
     }
   },
-  mounted (){
+  mounted () {
     this.getAllTodo()
   },
   watch: {
@@ -78,7 +78,7 @@ export default {
     ]),
     inputTodo: {
       get () {
-      return this.$store.state.inputTodo
+        return this.$store.state.inputTodo
       },
       set (value) {
         this.$store.commit('setInputTodo', value)
